@@ -416,6 +416,10 @@ body {
   color: #27104e;
   cursor: pointer;
 }
+.BigCol_3__Profile__avatar img {
+  width: 50px;
+  border-radius: 50%;
+}
 .BigCol_3__Profile__avatar__description .user-name {
   font-weight: 500;
   font-size: 18px;

@@ -525,6 +525,11 @@ body {
         cursor: pointer;
       }
 
+      img {
+        width: 50px;
+        border-radius: 50%;
+      }
+
       &__description {
         .user-name {
           font-weight: 500;
