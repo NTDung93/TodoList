@@ -6,6 +6,7 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   display: flex;
@@ -145,6 +146,60 @@ body {
       border: none;
       background: rgb(234, 234, 234);
       height: 30px;
+    }
+  }
+}
+
+.DadOfCol_2 {
+  .DadOfHiddenNav {
+    display: none;
+    .HiddenNav {
+      height: 100px;
+      width: 530px;
+      display: flex;
+      align-items: center;
+      &__LogoWeb {
+        margin-right: 41px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 75px;
+          cursor: pointer;
+          margin-right: 5px;
+        }
+        p {
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 60px;
+          cursor: pointer;
+          span {
+            color: #7949cb;
+          }
+        }
+      }
+
+      &__Searchbar {
+        &__input {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 300px;
+          height: 40px;
+          background: #fcfbff;
+          border-radius: 20px;
+          i {
+            cursor: pointer;
+          }
+          input {
+            outline: none;
+            border: none;
+          }
+          // transform: translate(40px, 30px);
+        }
+      }
     }
   }
 }
@@ -487,6 +542,10 @@ body {
         }
       }
     }
+
+    &__DadOfHiddenInfo {
+      display: none;
+    }
   }
 }
 
@@ -728,6 +787,138 @@ body {
       align-items: center;
       justify-content: space-around;
       cursor: pointer;
+    }
+  }
+}
+
+// Responsive
+
+@media only screen and(max-width: 1485px) {
+  body {
+    justify-content: center;
+  }
+
+  .BigCol_1 {
+    display: none;
+  }
+
+  .BigCol_3 {
+    border-radius: 15px;
+  }
+
+  .BigCol_2 {
+    margin-left: 0;
+  }
+}
+
+@media only screen and(max-width: 1300px) {
+  body {
+    // flex-direction: column;
+    justify-content: center;
+  }
+
+  .BigCol_1 {
+    display: none;
+  }
+
+  .DadOfCol_2 {
+    .DadOfHiddenNav {
+      display: block;
+    }
+  }
+
+  .BigCol_2 {
+    margin-left: 0;
+    margin-top: 0;
+    &__Searchbar {
+      display: none;
+    }
+
+    &__Greeting {
+      display: none;
+    }
+
+    &__TodoList {
+      display: flex;
+      flex-wrap: wrap;
+      width: 530px;
+      padding: 0;
+      margin: 0 !important;
+      // transform: translateY(70px);
+
+      &__Create {
+        width: 100%;
+        padding-left: 100px;
+        margin-bottom: 20px;
+        margin-right: 0;
+
+        // &__TaskType {
+        //   .TaskType2 {
+        //     display: none;
+        //   }
+        // }
+
+        &__TaskDetail {
+          display: none;
+        }
+      }
+
+      &__Display {
+        width: 100%;
+      }
+    }
+  }
+
+  .BigCol_3 {
+    border-radius: 15px;
+    // display: flex;
+    // &__Profile {
+    //   display: none;
+    // }
+  }
+}
+
+@media only screen and(max-width: 940px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .DadOfCol_2 {
+    .DadOfHiddenNav {
+      display: block;
+    }
+
+    .BigCol_2 {
+      &__TodoList {
+        &__Create {
+          width: 300px;
+          padding: 20px 10px 20px 20px;
+          width: 300px;
+
+          &__TaskType {
+            .TaskType1_03 {
+              display: none;
+            }
+          }
+
+          &__ButtonCreate {
+            button {
+              width: 240px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .BigCol_3 {
+    display: flex;
+    justify-content: center;
+    &__Profile {
+      display: none;
     }
   }
 }

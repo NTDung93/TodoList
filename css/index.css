@@ -6,6 +6,7 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   display: flex;
@@ -113,6 +114,54 @@ body {
   border: none;
   background: rgb(234, 234, 234);
   height: 30px;
+}
+
+.DadOfCol_2 .DadOfHiddenNav {
+  display: none;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav {
+  height: 100px;
+  width: 530px;
+  display: flex;
+  align-items: center;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__LogoWeb {
+  margin-right: 41px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__LogoWeb img {
+  width: 75px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__LogoWeb p {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 60px;
+  cursor: pointer;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__LogoWeb p span {
+  color: #7949cb;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__Searchbar__input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  background: #fcfbff;
+  border-radius: 20px;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__Searchbar__input i {
+  cursor: pointer;
+}
+.DadOfCol_2 .DadOfHiddenNav .HiddenNav__Searchbar__input input {
+  outline: none;
+  border: none;
 }
 
 .BigCol_2 {
@@ -381,6 +430,9 @@ body {
 .BigCol_2__TodoList__Display__ListTasks .ItemList:hover p {
   color: white;
 }
+.BigCol_2__TodoList__DadOfHiddenInfo {
+  display: none;
+}
 
 .BigCol_3 {
   background: #fcfbff;
@@ -576,4 +628,91 @@ body {
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1485px) {
+  body {
+    justify-content: center;
+  }
+  .BigCol_1 {
+    display: none;
+  }
+  .BigCol_3 {
+    border-radius: 15px;
+  }
+  .BigCol_2 {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    justify-content: center;
+  }
+  .BigCol_1 {
+    display: none;
+  }
+  .DadOfCol_2 .DadOfHiddenNav {
+    display: block;
+  }
+  .BigCol_2 {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .BigCol_2__Searchbar {
+    display: none;
+  }
+  .BigCol_2__Greeting {
+    display: none;
+  }
+  .BigCol_2__TodoList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 530px;
+    padding: 0;
+    margin: 0 !important;
+  }
+  .BigCol_2__TodoList__Create {
+    width: 100%;
+    padding-left: 100px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .BigCol_2__TodoList__Create__TaskDetail {
+    display: none;
+  }
+  .BigCol_2__TodoList__Display {
+    width: 100%;
+  }
+  .BigCol_3 {
+    border-radius: 15px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+  .DadOfCol_2 .DadOfHiddenNav {
+    display: block;
+  }
+  .DadOfCol_2 .BigCol_2__TodoList__Create {
+    width: 300px;
+    padding: 20px 10px 20px 20px;
+    width: 300px;
+  }
+  .DadOfCol_2 .BigCol_2__TodoList__Create__TaskType .TaskType1_03 {
+    display: none;
+  }
+  .DadOfCol_2 .BigCol_2__TodoList__Create__ButtonCreate button {
+    width: 240px;
+  }
+  .BigCol_3 {
+    display: flex;
+    justify-content: center;
+  }
+  .BigCol_3__Profile {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
