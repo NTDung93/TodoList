@@ -990,3 +990,40 @@ body {
     // }
   }
 }
+
+@media only screen and(max-width: 570px) {
+  .DadOfCol_2 {
+    width: 100%;
+  }
+
+  .DadOfHiddenNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .BigCol_2 {
+    transform: scale(0.8);
+  }
+
+  .HiddenNav {
+    transform: scale(0.8);
+  }
+}
+@media only screen and(max-width: 480px) {
+  .DadOfCol_2 {
+    width: 100%;
+  }
+
+  .DadOfHiddenNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .BigCol_2 {
+    transform: scale(0.7);
+  }
+
+  .HiddenNav {
+    transform: scale(0.7);
+  }
+}
