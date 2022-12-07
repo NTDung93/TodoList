@@ -545,6 +545,69 @@ body {
 
     &__DadOfHiddenInfo {
       display: none;
+      &__HiddenInfo {
+        background-color: #fcfbff;
+        border-radius: 15px;
+        width: 219px;
+        height: 310.8px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .HiddenInfo__avatar {
+          img {
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border: 5px solid #27104e;
+            cursor: pointer;
+          }
+
+          &__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .user-name {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 22px;
+              color: #27104e;
+              cursor: pointer;
+            }
+
+            .user-job {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: #888888;
+              cursor: pointer;
+            }
+          }
+
+          .HiddenInfo_Wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            i {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .HiddenInfo__Icon {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100px;
+          i {
+            font-size: 25px;
+          }
+        }
+      }
     }
   }
 }
@@ -882,7 +945,7 @@ body {
   body {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: 100vh;
     align-items: center;
   }
 
@@ -895,9 +958,9 @@ body {
       &__TodoList {
         &__Create {
           width: 300px;
-          padding: 20px 10px 20px 20px;
+          padding: 20px 0px 20px 20px;
           width: 300px;
-
+          margin-right: 10px;
           &__TaskType {
             .TaskType1_03 {
               display: none;
@@ -906,19 +969,24 @@ body {
 
           &__ButtonCreate {
             button {
-              width: 240px;
+              width: 260px;
             }
           }
+        }
+
+        &__DadOfHiddenInfo {
+          display: block;
         }
       }
     }
   }
 
   .BigCol_3 {
-    display: flex;
-    justify-content: center;
-    &__Profile {
-      display: none;
-    }
+    display: none;
+    // display: flex;
+    // justify-content: center;
+    // &__Profile {
+    //   display: none;
+    // }
   }
 }
