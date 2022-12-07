@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: flex;
+  background: rgb(158, 193, 233);
+  background: linear-gradient(138deg, rgb(158, 193, 233) 0%, rgb(172, 93, 222) 33%, rgb(168, 59, 231) 69%, rgb(210, 83, 194) 100%);
+}
+
+.actived {
+  background: rgb(0, 20, 43) !important;
+  background: linear-gradient(117deg, rgb(0, 20, 43) 0%, rgb(162, 0, 255) 65%, rgb(214, 8, 188) 100%) !important;
+  border-radius: 15px !important;
+  height: fit-content;
+  color: white !important;
+  cursor: pointer;
+  transition: all ease-out 0.5s;
+}
+.actived p,
+.actived i {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.BigCol_1 {
+  height: 100vh;
+  width: 222px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fcfbff;
+}
+.BigCol_1__icon {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-30px);
+}
+.BigCol_1__icon img {
+  width: 75px;
+  cursor: pointer;
+}
+.BigCol_1__icon p {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 60px;
+}
+.BigCol_1__icon p span {
+  color: #7949cb;
+}
+.BigCol_1__nav {
+  transform: translate(0, -100px);
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 170px;
+}
+.BigCol_1__nav .NavSon {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+.BigCol_1__nav .NavSon p {
+  color: #27104e;
+}
+.BigCol_1__nav .NavSon i {
+  color: #27104e;
+  padding-right: 10px;
+}
+.BigCol_1__logout {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 10px;
+  transform: translate(-11.5px, 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.BigCol_1__logout .NavSon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.BigCol_1__logout .NavSon1 i {
+  padding-right: 10px;
+}
+.BigCol_1__logout .Setting {
+  padding-bottom: 10px;
+}
+.BigCol_1__logout .Logout {
+  color: rgb(234, 49, 49);
+  border: 3px solid grey;
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  border: none;
+  background: rgb(234, 234, 234);
+  height: 30px;
+}
+
+.BigCol_2 {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 25px;
+}
+.BigCol_2__Searchbar__input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  background: #fcfbff;
+  border-radius: 20px;
+}
+.BigCol_2__Searchbar__input i {
+  cursor: pointer;
+}
+.BigCol_2__Searchbar__input input {
+  outline: none;
+  border: none;
+}
+.BigCol_2__Greeting {
+  width: 900px;
+  height: 214px;
+  margin-top: 20px;
+  background: #fcfbff;
+  border-radius: 20px;
+  padding: 20px 50px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.BigCol_2__Greeting__Left .BigTitle {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #27104e;
+  margin-bottom: 30px;
+}
+.BigCol_2__Greeting__Left .SmContent {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #27104e;
+  margin-bottom: 20px;
+}
+.BigCol_2__Greeting__Left__ButtonWrapper .btn1,
+.BigCol_2__Greeting__Left__ButtonWrapper .btn2 {
+  width: 180px;
+  height: 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+.BigCol_2__Greeting__Left__ButtonWrapper .btn1 {
+  margin-right: 10px;
+  background: rgb(0, 20, 43);
+  background: linear-gradient(117deg, rgb(0, 20, 43) 0%, rgb(162, 0, 255) 65%, rgb(214, 8, 188) 100%);
+  border-radius: 10px;
+  border: none;
+}
+.BigCol_2__Greeting__Left__ButtonWrapper .btn2 {
+  color: #27104e;
+  border: none;
+  background: rgb(234, 234, 234);
+  border-radius: 10px;
+}
+.BigCol_2__Greeting__Right img {
+  transform: translateY(-40px);
+}
+.BigCol_2__TodoList {
+  width: 900px;
+  color: #27104e;
+  display: flex;
+}
+.BigCol_2__TodoList__Create {
+  width: 350px;
+  margin-right: 22px;
+  background-color: #fcfbff;
+  padding: 15px;
+  border-radius: 15px;
+}
+.BigCol_2__TodoList__Create .TitleCreate {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.BigCol_2__TodoList__Create .TitleCreate2 {
+  color: #27104e;
+  font-weight: 600 !important;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.BigCol_2__TodoList__Create #todo-text {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #27104e;
+  margin-bottom: 15px;
+}
+.BigCol_2__TodoList__Create__TaskType {
+  margin-bottom: 15px;
+}
+.BigCol_2__TodoList__Create__TaskType > p {
+  color: #27104e;
+  font-weight: 600 !important;
+  font-size: 18px;
+}
+.BigCol_2__TodoList__Create__TaskType .Tasks {
+  padding: 5px 7px 3px 0px;
+}
+.BigCol_2__TodoList__Create__TaskType .Tasks button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: 500 !important;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.BigCol_2__TodoList__Create__TaskType .Tasks button:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType1 {
+  display: flex;
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType1_01 button {
+  background-color: rgb(97, 178, 248);
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType1_02 button {
+  background-color: rgb(231, 77, 139);
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType1_03 button {
+  background-color: rgb(245, 146, 65);
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType2 {
+  display: flex;
+  align-items: center;
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType2 i {
+  font-size: 29px;
+  transform: translate(5px, 1px);
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType2 i:hover {
+  cursor: pointer;
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType2_01 button {
+  background-color: rgb(54, 244, 139);
+}
+.BigCol_2__TodoList__Create__TaskType .TaskType2_02 button {
+  background-color: rgb(212, 72, 247);
+}
+.BigCol_2__TodoList__Create__TaskDetail {
+  margin-bottom: 25px;
+}
+.BigCol_2__TodoList__Create__TaskDetail > p {
+  color: #27104e;
+  font-weight: 600 !important;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.BigCol_2__TodoList__Create__TaskDetail .Detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.BigCol_2__TodoList__Create__TaskDetail .Detail input {
+  border: none;
+  border-bottom: 2px solid #27104e;
+}
+.BigCol_2__TodoList__Create__TaskDetail .Detail i {
+  margin-right: 15px;
+}
+.BigCol_2__TodoList__Create__ButtonCreate button {
+  width: 320px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600 !important;
+  font-size: 16px;
+  background: rgb(0, 20, 43);
+  background: linear-gradient(117deg, rgb(0, 20, 43) 0%, rgb(162, 0, 255) 65%, rgb(214, 8, 188) 100%);
+  transition: all 0.7s;
+}
+.BigCol_2__TodoList__Create__ButtonCreate button:hover {
+  background: rgb(0, 20, 43);
+  background: linear-gradient(83deg, rgb(0, 20, 43) 0%, rgb(248, 1, 218) 0%, rgb(140, 11, 137) 35%, rgb(3, 31, 84) 100%);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.BigCol_2__TodoList__Display {
+  width: 550px;
+  background-color: #fcfbff;
+  border-radius: 15px;
+  color: #27104e;
+}
+.BigCol_2__TodoList__Display__bgImage {
+  background-image: url(../image/ApplicationFrameHost_cSsYGB9fg0.png);
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.BigCol_2__TodoList__Display__bgImage .Dd {
+  padding: 6px 20px;
+}
+.BigCol_2__TodoList__Display__bgImage .Dd p {
+  color: white;
+}
+.BigCol_2__TodoList__Display__bgImage .Dd__DisplayDate {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.BigCol_2__TodoList__Display__bgImage .Dd__DisplayTime {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+}
+.BigCol_2__TodoList__Display__ListTasks {
+  padding: 10px 20px;
+}
+.BigCol_2__TodoList__Display__ListTasks .ItemList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: all 1s;
+}
+.BigCol_2__TodoList__Display__ListTasks .ItemList__Left__TaskTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #27104e;
+}
+.BigCol_2__TodoList__Display__ListTasks .ItemList__Left__TaskDate {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+.BigCol_2__TodoList__Display__ListTasks .ItemList__Right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70px;
+}
+.BigCol_2__TodoList__Display__ListTasks .ItemList:hover {
+  background-color: #7949cb;
+  cursor: pointer;
+}
+.BigCol_2__TodoList__Display__ListTasks .ItemList:hover p {
+  color: white;
+}
+
+.BigCol_3 {
+  background: #fcfbff;
+  width: 349px;
+  border-radius: 20px 0px 0px 20px;
+}
+.BigCol_3__Profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  margin-bottom: 29px;
+}
+.BigCol_3__Profile__Icon {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.BigCol_3__Profile__Icon i {
+  font-size: 25px;
+  color: #7949cb;
+  cursor: pointer;
+}
+.BigCol_3__Profile__avatar {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.BigCol_3__Profile__avatar i {
+  color: #27104e;
+  cursor: pointer;
+}
+.BigCol_3__Profile__avatar__description .user-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #27104e;
+}
+.BigCol_3__Profile__avatar__description .user-job {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+.BigCol_3__Calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BigCol_3__Calendar__Wrapper {
+  background: #fcfbff;
+  width: 349px;
+}
+.BigCol_3__Calendar__Wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px 10px;
+  color: #27104e;
+}
+.BigCol_3__Calendar__Wrapper header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.BigCol_3__Calendar__Wrapper header .icons i {
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  line-height: 38px;
+  color: #27104e;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 1px;
+  font-size: 1rem;
+}
+.BigCol_3__Calendar__Wrapper header .icons i:last-child {
+  margin-right: -10px;
+}
+.BigCol_3__Calendar__Wrapper header .icons i:hover {
+  background: #f2f2f2;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar {
+  padding: 15px 20px 0px 20px;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar ul li {
+  width: 14.2857142857%;
+  position: relative;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .weeks li {
+  font-weight: 500;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .days li {
+  cursor: pointer;
+  margin-top: 30px;
+  z-index: 1;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .days li::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .days li:hover::before {
+  background: #f2f2f2;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .days .inactive {
+  color: #aaa;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .days .active {
+  color: #fff;
+}
+.BigCol_3__Calendar__Wrapper__MainCalendar .days .active::before {
+  background: #7949cb !important;
+}
+.BigCol_3 fieldset {
+  margin: 0px 20px;
+  border-radius: 15px;
+  border: 2px solid #27104e;
+}
+.BigCol_3 fieldset legend {
+  color: #27104e;
+  font-size: 23.2px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.BigCol_3__Music {
+  background-color: #fcfbff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.BigCol_3__Music__Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.BigCol_3__Music__Info__Ava img {
+  width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.BigCol_3__Music__Info__Song__Name {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 18px;
+  color: #27104e;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.BigCol_3__Music__Info__Song__Singer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #27104e;
+  cursor: pointer;
+}
+.BigCol_3__Music__Time {
+  margin-bottom: 10px;
+}
+.BigCol_3__Music__Time img {
+  width: 180px;
+  cursor: pointer;
+}
+.BigCol_3__Music__Time__RealTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 15x;
+  line-height: 12px;
+  color: #27104e;
+}
+.BigCol_3__Music__Function {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

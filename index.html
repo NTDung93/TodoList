@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>72daLove's TodoList</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="BigCol_1">
+      <div class="BigCol_1__icon">
+        <img src="./image/main_icon.svg" alt="" />
+        <p>72<span>daLove</span></p>
+      </div>
+
+      <div class="BigCol_1__nav">
+        <div class="NavSon Dashboard user">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <p>Dashboard</p>
+        </div>
+
+        <div class="NavSon My Tasks user">
+          <i class="fa-solid fa-list-check"></i>
+          <p>My Tasks</p>
+        </div>
+        <div class="NavSon Projects user">
+          <i class="fa-solid fa-folder-open"></i>
+          <p>Projects</p>
+        </div>
+        <div class="NavSon Schedule user">
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>Schedule</p>
+        </div>
+        <div class="NavSon Chat user">
+          <i class="fa-solid fa-comment-dots"></i>
+          <p>Chat</p>
+        </div>
+      </div>
+
+      <div class="BigCol_1__logout">
+        <div class="NavSon1 Setting">
+          <i class="fa-solid fa-gear"></i>
+          <p>Setting</p>
+        </div>
+        <div class="NavSon1 Logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <p>Logout</p>
+        </div>
+      </div>
+    </div>
+    <div class="BigCol_2">
+      <div class="BigCol_2__Searchbar">
+        <div class="BigCol_2__Searchbar__input">
+          <input placeholder="Search anything here..." type="text" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="BigCol_2__Greeting">
+        <div class="BigCol_2__Greeting__Left">
+          <p class="BigTitle">Good Morning, Dung!</p>
+          <p class="SmContent">
+            Let's check your daily tasks and do best today!
+          </p>
+          <div class="BigCol_2__Greeting__Left__ButtonWrapper">
+            <button class="btn1 user">Today's schedule</button>
+            <button class="btn2 user">Today's tasks</button>
+          </div>
+        </div>
+        <div class="BigCol_2__Greeting__Right">
+          <img src="./image/girl_sitting.svg" alt="" />
+        </div>
+      </div>
+      <div class="BigCol_2__TodoList">
+        <div class="BigCol_2__TodoList__Create">
+          <p class="TitleCreate">Create a new task</p>
+          <p class="TitleCreate2">Title</p>
+          <input type="text" placeholder="Learn vocabulary..." id="todo-text" />
+          <div class="BigCol_2__TodoList__Create__TaskType">
+            <p>Task Type</p>
+            <div class="TaskType1">
+              <div class="TaskType1_01 Tasks">
+                <button>Project</button>
+              </div>
+              <div class="TaskType1_02 Tasks"><button>Meeting</button></div>
+              <div class="TaskType1_03 Tasks"><button>Homework</button></div>
+            </div>
+            <div class="TaskType2">
+              <div class="TaskType2_01 Tasks"><button>Shopping</button></div>
+              <div class="TaskType2_02 Tasks"><button>Sport</button></div>
+              <i class="fa-solid fa-circle-plus"></i>
+            </div>
+          </div>
+
+          <div class="BigCol_2__TodoList__Create__TaskDetail">
+            <p>Task Detail</p>
+            <div class="Detail BigCol_2__TodoList__Create__TaskDetail__Date">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday, Dec 7 8:00 PM - 11:00 PM</p>
+            </div>
+            <!-- <div class="Detail BigCol_2__TodoList__Create__TaskDetail__Member">
+              <i class="fa-sharp fa-solid fa-users-line"></i>
+              <img src="./image/people.svg" alt="" />
+            </div> -->
+            <div
+              class="Detail BigCol_2__TodoList__Create__TaskDetail__Location"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="Add location" />
+            </div>
+            <!-- <div
+              class="Detail BigCol_2__TodoList__Create__TaskDetail__Description"
+            >
+              <i class="fa-regular fa-file"></i>
+              <input type="text" placeholder="Add description" />
+            </div> -->
+          </div>
+
+          <div class="BigCol_2__TodoList__Create__ButtonCreate">
+            <button class="submit">Create Task</button>
+          </div>
+        </div>
+        <div class="BigCol_2__TodoList__Display">
+          <div class="BigCol_2__TodoList__Display__bgImage">
+            <div class="Dd">
+              <p class="Dd__DisplayDate">Wed 7</p>
+              <p class="Dd__DisplayTime">8:00 PM</p>
+            </div>
+          </div>
+          <div class="BigCol_2__TodoList__Display__ListTasks">
+            <div class="ItemList">
+              <div class="ItemList__Left">
+                <p class="ItemList__Left__TaskTitle">Hang out with friends</p>
+                <p class="ItemList__Left__TaskDate">Today at 4:30 PM</p>
+              </div>
+              <div class="ItemList__Right">
+                <img src="./image/edit_circle.svg" alt="" />
+                <img src="./image/trashbin.svg" alt="" />
+              </div>
+            </div>
+            <div class="ItemList">
+              <div class="ItemList__Left">
+                <p class="ItemList__Left__TaskTitle">Study JavaScript</p>
+                <p class="ItemList__Left__TaskDate">Today at 8:00 PM</p>
+              </div>
+              <div class="ItemList__Right">
+                <img src="./image/edit_circle.svg" alt="" />
+                <img src="./image/trashbin.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="BigCol_3">
+      <div class="BigCol_3__Profile">
+        <div class="BigCol_3__Profile__Icon">
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="BigCol_3__Profile__avatar">
+          <img src="./image/avatar_user.svg" alt="" />
+          <div class="BigCol_3__Profile__avatar__description">
+            <p class="user-name">Tien Dung</p>
+            <p class="user-job">Developer</p>
+          </div>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Music</legend>
+        <div class="BigCol_3__Music">
+          <div class="BigCol_3__Music__Info">
+            <div class="BigCol_3__Music__Info__Ava">
+              <!-- <img src="./image/bieber.png" alt="" /> -->
+              <img src="./image/bieber_purple.png" alt="" />
+            </div>
+            <div class="BigCol_3__Music__Info__Song">
+              <div class="BigCol_3__Music__Info__Song__Name">Mistletoe</div>
+              <div class="BigCol_3__Music__Info__Song__Singer">
+                Justin Bieber
+              </div>
+            </div>
+          </div>
+          <div class="BigCol_3__Music__Time">
+            <img src="./image/LineTime.svg" alt="" />
+            <div class="BigCol_3__Music__Time__RealTime">
+              <div class="BigCol_3__Music__Time__RealTime__Begin">3:00</div>
+              <div class="BigCol_3__Music__Time__RealTime__End">1:30</div>
+            </div>
+          </div>
+          <div class="BigCol_3__Music__Function">
+            <img src="./image/Shuffle.svg" alt="" />
+            <img src="./image/Previous.svg" alt="" />
+            <img src="./image/Play.svg" alt="" />
+            <img src="./image/Next.svg" alt="" />
+            <img src="./image/Loop.svg" alt="" />
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="BigCol_3__Calendar">
+        <div class="BigCol_3__Calendar__Wrapper">
+          <header>
+            <p class="current-date">December 2022</p>
+            <div class="icons">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </header>
+          <div class="BigCol_3__Calendar__Wrapper__MainCalendar">
+            <ul class="weeks">
+              <li>S</li>
+              <li>M</li>
+              <li>T</li>
+              <li>W</li>
+              <li>T</li>
+              <li>F</li>
+              <li>S</li>
+            </ul>
+            <ul class="days">
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li class="active">7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+              <li class="inactive">1</li>
+              <li class="inactive">2</li>
+              <li class="inactive">3</li>
+              <li class="inactive">4</li>
+              <li class="inactive">5</li>
+              <li class="inactive">6</li>
+              <li class="inactive">7</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
